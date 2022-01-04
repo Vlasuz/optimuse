@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Optimuse</title>
+</head>
+<body>
+
+	<div id="header_top" class="header_top">
+		<div class="container">
+			<div class="header_logo">
+				<a class="logo" href="/"><img src="img/logo.svg" alt=""></a>
+			</div>
+			<div class="header_title">New Office - File Name</div>
+			<div id="header_nav" class="header_nav">
+				<a href="#" class="link_help">Help</a>
+				<a href="#" class="link_upgrade">Upgrade</a>
+				<a href="#" class="link_login"></a>
+				<div class="nav">
+					<ul>
+						<li><a class="nav_link" href="index.html">Dashboard</a></li>
+						<li><a class="nav_link" href="#section_menu">Solution History</a></li>
+						<li><a class="nav_link" href="#section_delivery">Billing Information</a></li>
+						<li><a class="nav_link" href="#footer">Password</a></li>
+					</ul>
+					<div class="lang">DE - ENG</div>
+					<a href="#" class="logout">Log Out</a>
+				</div>
+			</div>
+
+			<button class="btn_mobile">
+				<span></span>
+			</button>
+		</div>
+	</div>
+
+	<div class="page-customRules-2">
+		<div class="container">
+			<div class="customRules_head">
+				<p class="customRules_crumbs">
+					Customize Rules  (1of 2)
+				</p>
+				<p class="text_title">
+					Select your optimization Goal
+				</p>
+				<p class="text_description">
+					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+				</p>
+			</div>
+			<div class="customRules_content">
+				<button class="accordion">
+					<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M5.5 5L0.5 2.18557e-07L0.5 10L5.5 5Z" fill="#7B7B7B"/>
+					</svg>
+					Movement Sensors						
+				</button>
+				<ul class="accordion_content">
+					<li>
+						<div class="accordion_item">
+							<span class="accordion_item_cover">Coverage</span>
+							<input type="text" class="js-range-slider" name="my_range" value="" />
+						</div>
+						<p class="accordion_item_description">
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+						</p>
+					</li>
+					<li>
+						<div class="accordion_item">
+							<span class="accordion_item_cover">Wall Distance</span>
+							<input type="text" class="js-range-slider" name="my_range" value="" />
+						</div>
+						<p class="accordion_item_description">
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+						</p>
+					</li>
+				</ul>
+
+				<button class="accordion active">
+					<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M5.5 5L0.5 2.18557e-07L0.5 10L5.5 5Z" fill="#7B7B7B"/>
+					</svg>
+					Fire Detectors						
+				</button>
+				<ul class="accordion_content active">
+					<li>
+						<div class="accordion_item">
+							<span class="accordion_item_cover">Coverage</span>
+							<input type="text" class="js-range-slider" name="my_range" value="" />
+						</div>
+						<p class="accordion_item_description">
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+						</p>
+					</li>
+					<li>
+						<div class="accordion_item">
+							<span class="accordion_item_cover">Wall Distance</span>
+							<input type="text" class="js-range-slider" name="my_range" value="" />
+						</div>
+						<p class="accordion_item_description">
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="wrapp_btn">
+				<button class="btn-v2" type="button">
+					Back
+				</button>
+				<button class="btn-v1" type="button">
+					Next
+				</button>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+	<script>
+		$(".js-range-slider").ionRangeSlider({
+			min: 0.5,
+			max: 4.5,
+			step: 0.5,
+			from: 1.5,
+		});
+	</script>
+</body>
+</html>
