@@ -45,9 +45,44 @@ if (document.querySelector('.download_solutions')) {
     solutionsDropdown.classList.toggle('_show');
   });
 }
+// TABS
+if (document.querySelector('.tabs_btn')) {
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
 
-
-
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+}
+// SLIDER BUILDING
+if (document.querySelector('.js-sl-tabs')) {
+  var mySwiper = new Swiper('.js-sl-tabs', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    // autoplay: {
+    //   delay: 5000,
+    // },
+    navigation: {
+      nextEl: '.swiper-tabs-button-next',
+      prevEl: '.swiper-tabs-button-prev',
+    },
+    pagination: {
+      el: ".swiper-pagination_tabs",
+      type: "fraction",
+    },
+  });
+}
 
 
 
