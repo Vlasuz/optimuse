@@ -45,6 +45,13 @@ if (document.querySelector('.download_solutions')) {
     solutionsDropdown.classList.toggle('_show');
   });
 }
+if (document.querySelector('.select_devices')) {
+  const selectClick = document.querySelector('.select_devices');
+  const selectDropdown = document.querySelector('.select_box');
+  selectClick.addEventListener('click', function() {
+    selectDropdown.classList.toggle('_show');
+  });
+}
 // TABS
 if (document.querySelector('.tabs_btn')) {
   function openCity(evt, cityName) {
